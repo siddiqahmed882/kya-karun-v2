@@ -23,7 +23,7 @@ if (!process.env.OPENAI_API_KEY) {
 console.log('✅ OpenAI API Key Loaded: **** (hidden for security)');
 
 // Endpoint for career suggestion
-app.post('/career-suggestion', async (req, res) => {
+app.post('/api/career-suggestion', async (req, res) => {
   const userAnswers = req.body.answers;
 
   // Validate user input

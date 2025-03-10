@@ -162,7 +162,7 @@
             submitButton.disabled = true;
             submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...';
 
-            fetch("http://localhost:5000/career-suggestion", {
+            fetch("/api/career-suggestion", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
